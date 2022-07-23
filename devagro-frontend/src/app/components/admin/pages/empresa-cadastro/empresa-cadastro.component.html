@@ -1,0 +1,101 @@
+<body>
+  <div class="child">
+    <div class="parent">
+      <div class="quadro">
+        <div class="centralizar_logo">
+          <img src="./assets/logo-devinhouse.png" alt="Logo Dev In House" />
+        </div>
+        <h1>Dev-Agro</h1>
+        <h2>Cadastro de Empresa</h2>
+
+        <h5>Nome Empresarial</h5>
+        <input
+          type="text"
+          placeholder="Nome empresarial"
+          class="entrada_texto"
+          required
+          minlength="2"
+          #add_companyName
+          (keyup)="save_companyName(add_companyName.value)"
+        />
+
+        <h5>CNPJ</h5>
+        <input
+          type="text"
+          placeholder="CNPJ da empresa"
+          class="entrada_texto"
+          required
+          minlength="2"
+          maxlength="14"
+          #Save_CNPJ
+          (keyup)="save_CNPJ(Save_CNPJ.value)"
+        />
+
+        <h5>Endereço da Sede</h5>
+        <input
+          type="text"
+          placeholder="Endereço"
+          class="entrada_texto"
+          required
+          minlength="6"
+          #add_companyAddress
+          (keyup)="save_companyAddress(add_companyAddress.value)"
+        />
+
+        <h5>E-mail da empresa</h5>
+        <input
+          type="text"
+          placeholder="E-mail da empresa"
+          class="entrada_texto"
+          required
+          minlength="2"
+          #add_companyEmail
+          (keyup)="save_companyEmail(add_companyEmail.value)"
+        />
+
+        <h5>Telefone</h5>
+        <input
+          type="text"
+          placeholder="Telefone da empresa para contato"
+          class="entrada_texto"
+          required
+          minlength="8"
+          maxlength="11"
+          #add_companyPhone
+          (keyup)="save_companyPhone(add_companyPhone.value)"
+        />
+
+        <h5>Senha</h5>
+        <input
+          type="text"
+          placeholder="Senha de acesso"
+          class="entrada_texto"
+          required
+          minlength="2"
+          maxlength="10"
+          #add_companyPassword
+          (keyup)="save_companyPassword(add_companyPassword.value)"
+        />
+
+        <h5>Digite confirmar a senha</h5>
+        <input
+          type="text"
+          placeholder="Senha "
+          class="entrada_texto"
+          required
+          minlength="2"
+          maxlength="10"
+          #add_companyPassword_confirm
+          (keyup)="
+            save_companyPassword_confirm(add_companyPassword_confirm.value)
+          "
+        />
+        <p></p>
+
+        <button class="centralizarbutton" (click)="click_log_in()">
+          Log In
+        </button>
+      </div>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,118 @@
+@import "../../../../../../css/variaveis.css";
+
+.container-login h3 {
+  margin-top: -35px;
+  color: var(--main-green-color);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.btn {
+  width: 100%;
+  height: 80px;
+  margin: 25px 0 0;
+  border-radius: 15px;
+  background: var(--main-green-color);
+  color: var(--white);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.container-login p {
+  margin-top: -80px;
+  margin-bottom: 35px;
+  color: var(--grey);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.sign-helper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign-helper-password {
+  color: var(--main-green-color);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.sign-error-credential {
+  padding-top: 20px;
+  color: var(--red);
+}
+
+.sign-input-value {
+  padding: 0 10px;
+  color: var(--black);
+  border: 1px solid var(--main-green-color);
+  font-weight: 500;
+}
+
+.sign-icon-eye {
+  position: absolute;
+  padding-left: 250px;
+  z-index: 2;
+}
+
+:host form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+:host form,
+label,
+input,
+label {
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+
+:host form,
+label,
+input {
+  height: 30px;
+  font-size: 18px;
+  width: 300px;
+}
+
+:host form,
+label,
+input, span {
+  color: var(--main-green-color);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+:host form,
+label,
+input::placeholder {
+  color: var(--grey);
+  font-weight: 400;
+}
+
+:host form, button {
+  border: none;
+}
+
+.sign-new-account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign-new-account span {
+  color: var(--grey);
+  font-weight: 400;
+}
+.sign-new-account a {
+  color: var(--main-green-color);
+  text-decoration: none;
+  font-weight: 600;
+}

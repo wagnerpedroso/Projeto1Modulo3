@@ -1,0 +1,61 @@
+<app-sidenav></app-sidenav>
+
+<app-template-body [title]="titulo">
+  <div class="fundo-tabela">
+    <br />
+    <h2 class="formulario">Nome</h2>
+    <input
+      type="text"
+      placeholder="  Nome"
+      class="input"
+      required
+      minlength="2"
+      #NAME
+      (keyup)="alter_name(NAME.value)"
+    />>
+
+    <br /><br />
+    <h2 class="formulario">Fazenda que Produz</h2>
+    <input
+      type="text"
+      placeholder="  seleciona a fazenda"
+      class="input"
+      required
+      #farm
+      (keyup)="alter_farm(farm.value)"
+    />>
+
+    <br /><br />
+    <h2 class="formulario">Previsão de harvest</h2>
+    <input
+      type="date"
+      placeholder="Data dd/mm/aaaa"
+      class="input"
+      required
+      #harvest
+      (keyup)="alter_harvest(harvest.value)"
+    />>
+
+    <br /><br />
+    <h2 class="formulario">Informações adicionais</h2>
+    <input
+      type="text"
+      placeholder="  Informações adicionais"
+      class="input"
+      #information
+      (keyup)="alter_information(information.value)"
+    />> <br /><br /><br />
+  </div>
+
+  <div class="borda2">
+    <button
+      pButton
+      pRipple
+      (click)="btnClick(); click_add()"
+      type="button"
+      label="Adicionar"
+      class="p-button-rounded p-button-success"
+    ></button>
+    <br />
+  </div>
+</app-template-body>

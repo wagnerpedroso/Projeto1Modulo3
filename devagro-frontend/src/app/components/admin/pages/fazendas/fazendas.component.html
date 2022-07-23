@@ -1,0 +1,17 @@
+<app-sidenav></app-sidenav>
+
+<app-template-body [title]="titulo">
+  <app-propriedades-cadastradas></app-propriedades-cadastradas>
+
+  <div class="text-center">
+    <a routerLink="/admin/fazendas/cadastro">
+      <button
+        pButton
+        pRipple
+        type="button"
+        label="Cadastrar nova fazenda"
+        class="p-button-rounded p-button-success"
+      ></button>
+    </a>
+  </div>
+</app-template-body>

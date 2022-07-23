@@ -1,0 +1,45 @@
+<app-sidenav></app-sidenav>
+<app-template-body [title]="titulo">
+  <p-table
+    [value]="localStorageViewObject"
+    styleClass="p-datatable-striped"
+    responsiveLayout="scroll"
+  >
+    <ng-template pTemplate="header">
+      <tr>
+        <th style="text-align: center">Nome do funcionario</th>
+        <th style="text-align: center">Fazenda Alocado</th>
+        <th style="text-align: center">Função Principal</th>
+        <th style="text-align: center">Ativo</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-fun>
+      <tr>
+        <td style="text-align: center" class="td-detalhe">{{ fun.name }}</td>
+        <td style="text-align: center" class="th-fazenda">{{ fun.farm }}</td>
+        <td style="text-align: center" class="th-funcao">
+          {{ fun.mainFunction }}
+        </td>
+        <td style="text-align: center" class="div-ativo">{{ fun.active }}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+
+  <button
+    pButton
+    pRipple
+    routerLink="/admin/funcionarios/cadastro"
+    type="button"
+    label="Adicionar novo funcionario"
+    class="button p-button-rounded p-button-success"
+  ></button>
+
+  <button
+    pButton
+    pRipple
+    routerLink="/admin/funcionarios/cadastro/alterar"
+    type="button"
+    label="Alterar Informações"
+    class="button p-button-rounded p-button-success"
+  ></button>
+</app-template-body>

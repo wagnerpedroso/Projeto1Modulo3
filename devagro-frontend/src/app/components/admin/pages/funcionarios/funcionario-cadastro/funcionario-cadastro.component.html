@@ -1,0 +1,85 @@
+<app-sidenav></app-sidenav>
+<app-template-body>
+  <h1>Funcionarios</h1>
+
+  <div class="borda">
+    <p></p>
+    <h2 class="formulario">NOME</h2>
+    <input
+      type="text"
+      placeholder="Nome"
+      class="entrada_texto"
+      #NOME
+      (keyup)="mudar_name(NOME.value)"
+      required
+    />
+
+    <p></p>
+    <h2 class="formulario">FAZENDA</h2>
+    <input
+      type="text"
+      placeholder="seleciona a fazenda"
+      class="entrada_texto"
+      #FAZENDA
+      (keyup)="mudar_farm(FAZENDA.value)"
+      required
+    />
+
+    <p></p>
+    <h2 class="formulario">CPF</h2>
+    <input
+      type="number"
+      placeholder="CPF"
+      class="entrada_texto"
+      #CPF
+      (keyup)="mudar_CPF(CPF.value)"
+      required
+    />
+
+    <p></p>
+    <h2 class="formulario">TELEFONE</h2>
+    <input
+      type="number"
+      placeholder="Telefone"
+      class="entrada_texto"
+      #TELEFONE
+      (keyup)="mudar_telephone(TELEFONE.value)"
+      required
+    />
+
+    <p></p>
+    <h2 class="formulario">FUNÇÃO PRINCIPAL</h2>
+    <input
+      type="Função principal"
+      placeholder="Função principal"
+      class="entrada_texto"
+      #FUNCAO_PRINCIPAL
+      (keyup)="mudar_mainFunction(FUNCAO_PRINCIPAL.value)"
+      required
+    />
+
+    <p></p>
+    <h2 class="formulario">ATIVO</h2>
+    <label class="switch">
+      <input
+        type="checkbox"
+        #ATIVO
+        (change)="mudar_active(ATIVO.checked)"
+        required
+      />
+      <span class="slider round"></span>
+    </label>
+
+    <p></p>
+  </div>
+
+  <button
+    pButton
+    pRipple
+    (click)="apertar_cadastrar()"
+    routerLink="/admin/funcionarios/"
+    type="button"
+    label="Cadastrar"
+    class="p-button-rounded p-button-success"
+  ></button>
+</app-template-body>

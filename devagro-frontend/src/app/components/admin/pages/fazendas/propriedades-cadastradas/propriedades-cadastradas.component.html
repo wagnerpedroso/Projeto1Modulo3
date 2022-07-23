@@ -1,0 +1,64 @@
+<div class="dropdown">
+  <button
+    pButton
+    pRipple
+    type="button"
+    data-bs-toggle="dropdown"
+    class="p-button-rounded p-button-success float-end"
+    aria-expanded="false"
+  >
+    Organizar<i class="pi pi-angle-double-down"></i>
+  </button>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><h6 class="dropdown-header">Nome da fazenda</h6></li>
+    <li>
+      <a class="dropdown-item" (click)="nomeCrescente()"
+        >Nome da fazenda em ordem crescente</a
+      >
+    </li>
+    <li>
+      <a class="dropdown-item" (click)="nomeDecrescente()"
+        >Nome da fazenda em ordem decrescente</a
+      >
+    </li>
+    <li><hr class="dropdown-divider" /></li>
+    <li><h6 class="dropdown-header">Data da colheita</h6></li>
+    <li>
+      <a class="dropdown-item" (click)="colheitaCrescente()"
+        >Data da colheita em ordem crescente</a
+      >
+    </li>
+    <li>
+      <a class="dropdown-item" (click)="colheitaDecrescente()"
+        >Data da colheita em ordem decrescente</a
+      >
+    </li>
+  </ul>
+</div>
+<br />
+<br />
+<br />
+
+<p-table
+  [value]="farmList"
+  styleClass="p-datatable-striped"
+  responsiveLayout="scroll"
+>
+  <ng-template pTemplate="header">
+    <tr>
+      <th style="text-align: center">Nome da propriedade</th>
+      <th style="text-align: center">Grão da produção</th>
+      <th style="text-align: center">Previsão de coleita</th>
+      <th style="text-align: center">Localização</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-product>
+    <tr>
+      <td style="text-align: center">{{ product.name }}</td>
+      <td style="text-align: center">{{ product.grain }}</td>
+      <td style="text-align: center">{{ product.last_harvest }}</td>
+      <td style="text-align: center">{{ product.localization }}</td>
+    </tr>
+  </ng-template>
+</p-table>
