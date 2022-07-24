@@ -22,20 +22,4 @@ describe('FuncionariosComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-
-  /*
-  it('testa funcionario component', () => {
-    let listaObj ={
-      name: 'teste',
-      id: 0,
-      farm:'fazenda1',
-      CPF: '123',
-      telephone: '123',
-      mainFunction: 'dev',
-      active: 'true',
-    }
-     listaObj = listaFuncionarios 
-    expect(component.listaObj).toBeTruthy();
-  });
-  */
 });

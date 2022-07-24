@@ -23,7 +23,7 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { FazendaCadastroComponent } from './pages/fazendas/fazenda-cadastro/fazenda-cadastro.component';
 import { GraoCadastroComponent } from './pages/grao-cadastro/grao-cadastro.component';
 import { FuncionarioCadastroComponent } from './pages/funcionarios/funcionario-cadastro/funcionario-cadastro.component';
-import { FuncionarioAlteraCadastroComponent } from './pages/funcionarios/funcionario-altera-cadastro/funcionario-altera-cadastro.component';
+
 import { PropriedadesCadastradasComponent } from './pages/fazendas/propriedades-cadastradas/propriedades-cadastradas.component';
 import { ChartsComponent } from './pages/dashboard/charts/charts.component';
 import { EmpresaCadastroComponent } from './pages/empresa-cadastro/empresa-cadastro.component';
@@ -41,7 +41,6 @@ import { TableModule } from 'primeng/table';
     DashboardComponent,
     FazendaCadastroComponent,
     FuncionarioCadastroComponent,
-    FuncionarioAlteraCadastroComponent,
     GraoCadastroComponent,
     PropriedadesCadastradasComponent,
     ChartsComponent,

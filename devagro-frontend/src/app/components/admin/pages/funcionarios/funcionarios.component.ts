@@ -121,18 +121,11 @@ export class FuncionariosComponent implements OnInit {
   }
 
   addFuncionarios() {
-    // product.preventDefault();
-
-    //CRIA UM ELEMENTO TR E ATRIBUI UMA CLASSE A ELE
     const tr = document.createElement('tr');
     tr.classList.add('tr');
-
-    ///BUSCA O ELEMENTO TABLE VIA DOM
-    //DEFINE O ELEMENTO TR CRAIDO ANTERIORMENTE COMO ELEMENTO FILHO DE TABLE
     const table = document.querySelector('table');
     table?.appendChild(tr);
 
-    ///CRIAÇÃO DOS ELEMENTOS TD E CONFIGURAÇÃO DOS nameS DAS CLASSES
     const td2 = document.createElement('td');
     td2.classList.add('td2');
     const td1 = document.createElement('td');
@@ -145,38 +138,28 @@ export class FuncionariosComponent implements OnInit {
     const td5 = document.createElement('td');
     td5.classList.add('td5');
 
-    //////ASSOCIA TODAS AS "TD" COMO FILHAS DE "TR"
-
     tr.appendChild(td1);
     tr.appendChild(td2);
     tr.appendChild(td3);
     tr.appendChild(td4);
     tr.appendChild(td5);
 
-    //MANIPULA ELEMENTOS DENTRO DE "TD1" (INSERE 2 DIVS)
     const divImg = document.createElement('div');
     td1.appendChild(divImg);
-    //Adiciona tag <img> dentro de "divImg"
     const img = document.createElement('img');
     divImg.appendChild(img);
 
-    //ADICIONA DIV QUE CONTERÁ name E EMAIL
     const divParagrafo = document.createElement('div');
     td1.appendChild(divParagrafo);
-    //ADICIONA OS PARAGRAFOS QUE CONTERAM name E EMAIL NA "DIVpARAGRAFO"
+
     const p1 = document.createElement('p');
     const p2 = document.createElement('p');
     divParagrafo.appendChild(p1);
     this.peganame();
     p1.classList.add('id:');
     console.log(p1.className);
-    //p1.className=this.name
 
     divParagrafo.appendChild(p2);
-
-    // p2.innerText="xxxxxxxxx"
-
-    //MANIPULA ELEMENTOS DENTRO DE "TD2"
   }
 
   constroiLsitaDeObj() {

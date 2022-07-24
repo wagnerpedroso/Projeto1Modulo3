@@ -5,6 +5,7 @@ h1{
 .h1-up{
   margin-bottom: 50px;
 }
+
 .h1-down{
   margin-top: 50px;
 }
@@ -64,8 +65,8 @@ justify-content: space-between;
 }
 
 .button {
-  flex-direction: row-reverse;
-  margin-left: 30vh;
+  display: flex;
+  margin-left: 70vh;
   margin-right: 10vh;
   margin-top: 5vh;
 }
