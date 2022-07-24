@@ -8,7 +8,7 @@ import { JwtHelperService } from '@auth0/angular-jwt';
   styleUrls: ['./template-body.component.css'],
 })
 export class TemplateBodyComponent implements OnInit {
-  user: string = '';
+  user: string = "";
 
   private _title: any;
 
@@ -36,7 +36,7 @@ export class TemplateBodyComponent implements OnInit {
       String(localStorage.getItem('access_token_devagro'))
     );
     const decodedToken = helper.decodeToken(token);
-    this.user = decodedToken; /*.data.nome*/
+    this.user = decodedToken.data.nome;
   }
 
   ngOnInit(): void {

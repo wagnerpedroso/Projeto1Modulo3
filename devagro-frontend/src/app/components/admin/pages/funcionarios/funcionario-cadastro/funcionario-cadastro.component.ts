@@ -35,31 +35,31 @@ export class FuncionarioCadastroComponent implements OnInit {
     active: '',
   };
 
-  mudar_name(name: string): void {
+  alter_name(name: string): void {
     this.funcionario_info.name = name;
   }
 
-  mudar_farm(farm: string): void {
+  alter_farm(farm: string): void {
     this.funcionario_info.farm = farm;
   }
 
-  mudar_CPF(CPF: string): void {
+  alter_CPF(CPF: string): void {
     this.funcionario_info.CPF = CPF;
   }
 
-  mudar_telephone(telephone: string): void {
+  alter_telephone(telephone: string): void {
     this.funcionario_info.telephone = telephone;
   }
 
-  mudar_mainFunction(mainFunction: string): void {
+  alter_mainFunction(mainFunction: string): void {
     this.funcionario_info.mainFunction = mainFunction;
   }
 
-  mudar_active(active: boolean): void {
+  alter_active(active: boolean): void {
     this.funcionario_info.active = active;
   }
 
-  apertar_cadastrar(): void {
+  click_add(): void {
     let id = Number(localStorage.getItem('quantidade_funcionarios'));
     if (id == null) {
       this.funcionario_info.id = 0;

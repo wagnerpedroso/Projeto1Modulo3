@@ -10,7 +10,7 @@
       placeholder="Nome"
       class="entrada_texto"
       #NOME
-      (keyup)="mudar_name(NOME.value)"
+      (keyup)="alter_name(NOME.value)"
       required
     />
 
@@ -21,7 +21,7 @@
       placeholder="seleciona a fazenda"
       class="entrada_texto"
       #FAZENDA
-      (keyup)="mudar_farm(FAZENDA.value)"
+      (keyup)="alter_farm(FAZENDA.value)"
       required
     />
 
@@ -32,7 +32,7 @@
       placeholder="CPF"
       class="entrada_texto"
       #CPF
-      (keyup)="mudar_CPF(CPF.value)"
+      (keyup)="alter_CPF(CPF.value)"
       required
     />
 
@@ -43,7 +43,7 @@
       placeholder="Telefone"
       class="entrada_texto"
       #TELEFONE
-      (keyup)="mudar_telephone(TELEFONE.value)"
+      (keyup)="alter_telephone(TELEFONE.value)"
       required
     />
 
@@ -54,7 +54,7 @@
       placeholder="Função principal"
       class="entrada_texto"
       #FUNCAO_PRINCIPAL
-      (keyup)="mudar_mainFunction(FUNCAO_PRINCIPAL.value)"
+      (keyup)="alter_mainFunction(FUNCAO_PRINCIPAL.value)"
       required
     />
 
@@ -64,7 +64,7 @@
       <input
         type="checkbox"
         #ATIVO
-        (change)="mudar_active(ATIVO.checked)"
+        (change)="alter_active(ATIVO.checked)"
         required
       />
       <span class="slider round"></span>
@@ -76,7 +76,7 @@
   <button
     pButton
     pRipple
-    (click)="apertar_cadastrar()"
+    (click)="click_add()"
     routerLink="/admin/funcionarios/"
     type="button"
     label="Cadastrar"

@@ -14,7 +14,7 @@ describe('FuncionariosComponent', () => {
   });
 
   beforeEach(() => {
-    localStorage.clear();
+    
     fixture = TestBed.createComponent(FuncionariosComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

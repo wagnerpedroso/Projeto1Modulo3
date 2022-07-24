@@ -22,9 +22,11 @@ export class FuncionariosComponent implements OnInit {
 
   constructor() {}
 
-  localStorageView: Array<string> = Object(
-    JSON.parse(String(localStorage.getItem('listaFuncionarios')))
-  );
+  localStorageView: Array<string> = !Array.isArray(
+    JSON.parse(localStorage.getItem('listaFuncionarios') as string)
+  )
+    ? []
+    : Object(JSON.parse(String(localStorage.getItem('listaFuncionarios'))));
   localStorageViewObject: Array<Object> = [];
   listaObj: Array<object> = [];
   listname: Array<any> = [];
@@ -79,7 +81,7 @@ export class FuncionariosComponent implements OnInit {
   pegaFuncao() {
     this.localStorageViewObject.forEach((elemental) => {
       Object.entries(elemental).forEach((element) => {
-        if (element[0] == 'funcao_princila') {
+        if (element[0] == 'mainFunction') {
           console.log(element[1]);
           this.mainFunction = element[1];
           console.log(this.mainFunction);
