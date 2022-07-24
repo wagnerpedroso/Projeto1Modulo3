@@ -5,7 +5,6 @@
     border-color: var(--main-green-color);
     border-radius: 10px;
     border-width: 3px;
-    
 }
 
 .formulario{
@@ -24,7 +23,7 @@
     Width: 1000px;
     Height: 35px;
     Top: 2px;
-  }
+}
 
 .fundo-tabela {
     padding: 2rem 2rem;
@@ -52,13 +51,12 @@ h2 {
 
 h3 {
    margin-left: 8vh;
-
 }
 
- input[type="date"]::-webkit-calendar-picker-indicator {
+input[type="date"]::-webkit-calendar-picker-indicator {
     display: none;
     -webkit-appearance: none;
-  }
+}
   
 input:invalid, textarea:invalid {
     border-color: red;
@@ -69,5 +67,4 @@ input:valid, textarea:valid {
 }
 .borda2 {
     width:1100px;
-   
 }

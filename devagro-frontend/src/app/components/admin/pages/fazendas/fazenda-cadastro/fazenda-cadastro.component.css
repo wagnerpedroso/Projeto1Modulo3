@@ -27,3 +27,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   display: none;
   -webkit-appearance: none;
 }
+input:invalid, textarea:invalid {
+  border-color: red;
+}
+input:valid, textarea:valid {
+  border-color: #375F24;
+}

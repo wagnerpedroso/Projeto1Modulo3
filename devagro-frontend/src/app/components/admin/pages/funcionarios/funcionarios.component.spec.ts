@@ -14,7 +14,6 @@ describe('FuncionariosComponent', () => {
   });
 
   beforeEach(() => {
-    
     fixture = TestBed.createComponent(FuncionariosComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

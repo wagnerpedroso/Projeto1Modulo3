@@ -6,16 +6,6 @@
   background: white;
 }
 
-.borda{
-  background-color: #fff;
-  width:1100px;
-  border-style: solid;
-  border-color: var(--main-green-color);
-  border-radius: 10px;
-  border-width: 3px;
-  
-}
-
 .formulario{
   position: relative;
   left: 5%;

@@ -36,7 +36,7 @@ describe('GraoCadastroComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('Deve alterar o nome do grão', () => {
+  it('Testa inserir o nome do grão', () => {
     let grainInformation = {
       id: 0,
       name: 'arroz',
@@ -48,7 +48,7 @@ describe('GraoCadastroComponent', () => {
     expect('arroz').toBe(component.grainInformation.name);
   });
 
-  it('Deve alterar o nome da fazenda', () => {
+  it('Testa inserir o nome da fazenda', () => {
     let grainInformation = {
       id: 0,
       name: '',
@@ -60,7 +60,7 @@ describe('GraoCadastroComponent', () => {
     expect('fazenda').toBe(component.grainInformation.farm);
   });
 
-  it('Deve alterar o data da colheita', () => {
+  it('Testa inserir o data da colheita', () => {
     let grainInformation = {
       id: 0,
       name: '',
@@ -72,7 +72,7 @@ describe('GraoCadastroComponent', () => {
     expect('10/10/2022').toBe(component.grainInformation.harvest);
   });
 
-  it('Deve alterar a informação', () => {
+  it('Testa inserir a informação', () => {
     let grainInformation = {
       id: 0,
       name: '',
@@ -84,7 +84,7 @@ describe('GraoCadastroComponent', () => {
     expect('teste').toBe(component.grainInformation.information);
   });
 
-  it('Testa o inserir novo grão pela quantidade de itens da lista', () => {
+  it('Testa inserir novo grão pela quantidade de itens da lista', () => {
     let grainInformation = {};
 
     component.grainInformation = grainInformation;

@@ -28,19 +28,19 @@ export class FazendaCadastroComponent implements OnInit {
     localization: '',
   };
 
-  mudar_name(name: string): void {
+  alter_name(name: string): void {
     this.farm_information.name = name;
   }
 
-  mudar_grain(grain: string): void {
+  alter_grain(grain: string): void {
     this.farm_information.grain = grain;
   }
 
-  mudar_last_harvest(last_harvest: string): void {
+  alter_last_harvest(last_harvest: string): void {
     this.farm_information.last_harvest = last_harvest;
   }
 
-  mudar_localization(localization: string): void {
+  alter_localization(localization: string): void {
     this.farm_information.localization = localization;
   }
 
@@ -51,7 +51,6 @@ export class FazendaCadastroComponent implements OnInit {
     } else {
       this.farm_information.id = id;
     }
-
     //ADD O OBJETO A LISTA
     this.farmListstorage.push(this.farm_information);
     //REFERENCIA O LOCAL STORAGE A LISTA

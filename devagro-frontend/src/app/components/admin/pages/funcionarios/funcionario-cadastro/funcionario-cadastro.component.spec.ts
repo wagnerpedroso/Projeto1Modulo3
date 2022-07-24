@@ -54,7 +54,6 @@ describe('FuncionarioCadastroComponent', () => {
     expect('88457123654').toBe(component.funcionario_info.CPF);
   });
 
-
   it('Testa o nome da fazenda', () => {
     let employeeInformation = {
       id: 0,
@@ -149,5 +148,4 @@ describe('FuncionarioCadastroComponent', () => {
     const qtd = Number(localStorage.getItem('quantidade_funcionarios'));
     expect(1).toEqual(qtd);
   });
-
 });

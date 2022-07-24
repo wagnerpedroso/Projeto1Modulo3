@@ -78,59 +78,9 @@ Bem-vindo ao pagina home do sistema.
 
 ## 📦 Desenvolvimento
 
-Atas das reuniões realizadas. 
+Desenvolvido por Wagner Pedroso.
 
-1º Reunião - 06/06/22 - 19:30.
-
-Leitura do projeto, uso do Git.
-
-2º Reunião - 07/06/22 - 19:30.
-
-Conversa de alinhamento para criação do projeto e melhor forma de desenvolver a aplicação / Decisão do banco de dados. 
-
-3º Reunião - 08/06/22 - 19:30.
-
-Clone da main, distribuindo os primeiros cards do Trello.
-
-4º Reunião - 09/06/22 - 19:30.
-
-Discussão e tira dúvidas sobre o projeto com o professor Maycon. (Assunto: Cidade para exibir o clima)
-
-5º Reunião  - 10/06/22 - 19:30.
-
-Tira dúvidas sobre o LocalStorage.
-
-6º Reunião  - 11/06/22 - 19:30.
-
-Tira dúvidas, organizando trabalhos para o final de semana.
-
-7º Reunião - 13/06/22 - 19:30.
-
-Apresentação de resultados e tira dúvidas.
-
-8º dia - 14/06/22 - 19:30.
-
-Definindo prazo para termino das páginas. 
-
-9º dia - 15/06/22 - 19:30.
-
-Apresentação de resultados, inicio da junção dos projetos.
-
-10º dia - 16/06/22 - 19:30.
-
-Apresentação de resultados, junção dos projetos, definindo apresentação.
-
-11º dia - 17/06/22 - 19:30.
-
-Finalizando o desenvolvimento do projeto, dividindo apresentação.
-
-12º dia - 18/06/22 - 19:30.
-
-Apresentação de resultados, apresentação do projeto.
-
-13º dia - 19/06/22 - 14:30.
-
-Ultimas modificações, entraga final do projeto.
+24/07/2022 Ultimas modificações, entraga final do projeto.
 
 ## 🛠️ Tecnologias utilizadas
 
@@ -156,25 +106,7 @@ Versão do projeto 1.0 - Desenvolvido pelo SQUAD 1!
 
 Todos aqueles que ajudaram a levantar o projeto desde o seu início.
 
-* **Wagner Pedroso** - *Product Owner* - [Desenvolvedor] (https://github.com/wagnerpedroso)
-
-* **Thiago Teodoro Peres** - *Architecture/Developer* - [Desenvolvedor] (https://github.com/tpdevinhouse)
-
-* **Leonardo Rodrigues Magalhães** - *Developer/Quality Assurance* - [Desenvolvedor] (https://github.com/scorplion159)
-
-* **Allan Pereira Abrahão** - *Developer/Quality Assurance* - [Desenvolvedor] (https://github.com/all-an)
-
-* **Theo Lomeu Braga** - *Developer* - [Desenvolvedor] (https://github.com/TheoLomeuBraga)
-
-* **Douglas Klafke Scheibler** - *Developer* - [Desenvolvedor] (https://github.com/DouglasKlafkeScheibler)
-
-* **Murillo Henryque de Paula Silva** - *Developer* - [Desenvolvedor] (https://github.com/Rumil0)
-
-* **Valeria Alexandra Guevara Parra** - *Developer* - [Desenvolvedor] (https://github.com/ValeriaGuevara1901)
-
-* **Monique Aparecida Zanquet** - *Developer* - [Desenvolvedor] (https://github.com/mzanquet)
-
-* **Bruno Santana** - *Developer* - [Desenvolvedor] (https://github.com/ibrunoss) (Desistente)
+* **Wagner Pedroso** - [Desenvolvedor] (https://github.com/wagnerpedroso)
 
 <p align="center"><a href="#"><img align="center" width="218" height="375"  src="squad.jpg" /></a></p>
 

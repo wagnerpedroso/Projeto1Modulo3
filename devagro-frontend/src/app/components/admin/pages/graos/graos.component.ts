@@ -37,12 +37,6 @@ export class GraosComponent implements OnInit {
     this.mostrar = false;
   }
 
-  deleteGrain() {
-    localStorage.clear();
-    this.grainObjetos = JSON.parse(String(localStorage.getItem('grainList')));
-    this.mostrar = false;
-  }
-
   refreshPage() {
     window.location.reload();
   }
